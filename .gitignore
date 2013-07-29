@@ -15,6 +15,13 @@
 /log/*.log
 /tmp
 
-
+# Test
 /coverage/
 /spec/tmp/
+
+# VIM
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
