@@ -47,3 +47,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+# Manually added
+
+# bootstrap-sass. Read more: https://github.com/thomas-mcdonald/bootstrap-sass
+gem 'bootstrap-sass', '~> 2.3.2.1'
