@@ -1,8 +1,4 @@
-if ENV['GEM_SOURCE']
-  source ENV['GEM_SOURCE']
-else
-  source "https://rubygems.org"
-end
+source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
