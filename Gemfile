@@ -51,5 +51,8 @@ end
 # bootstrap-sass. Read more: https://github.com/thomas-mcdonald/bootstrap-sass
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
-# simple_form. Read more: https://github.com/plataformatec/simple_form
-gem 'simple_form', ">= 3.0.0.rc"
+# formtastic. Read more: https://github.com/justinfrench/formtastic
+gem 'formtastic', "~> 2.2.1"
+
+# activeadmin. Read more: https://github.com/gregbell/active_admin
+# gem 'activeadmin'
