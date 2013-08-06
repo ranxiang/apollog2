@@ -52,7 +52,8 @@ end
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
 # formtastic. Read more: https://github.com/justinfrench/formtastic
-gem 'formtastic', "~> 2.2.1"
+gem 'formtastic'
+gem 'formtastic-bootstrap'
 
 # activeadmin. Read more: https://github.com/gregbell/active_admin
 # gem 'activeadmin'

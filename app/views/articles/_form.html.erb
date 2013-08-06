@@ -1,9 +1,6 @@
-<%= simple_form_for(@article, :html => { :class => 'form-horizontal' }) do |f| %>
-  <legend>Article</legend>
-  <%= f.input :title %>
-  <%= f.input :body %>
-  <%= f.input :published %>
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-  </div>
+<%= semantic_form_for @article do |f| %>
+
+  <%= f.inputs :title, :body %>
+  <%= f.actions %>
+
 <% end %>
