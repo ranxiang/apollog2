@@ -58,3 +58,6 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'formtastic',          github: 'justinfrench/formtastic'
 
 gem 'formtastic-bootstrap'
+
+# markdown support. Read more: https://github.com/vmg/redcarpet
+gem 'redcarpet'

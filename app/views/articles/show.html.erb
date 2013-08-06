@@ -7,7 +7,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @article.body.html_safe %>
+  <%= markdown(@article.body).html_safe %>
 </p>
 
 <p>
