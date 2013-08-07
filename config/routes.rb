@@ -2,6 +2,9 @@ Apollog2::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :articles
+  get '/feed'   => 'articles#index',
+        :as       => :feed,
+        :defaults => { :format => 'atom' }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
