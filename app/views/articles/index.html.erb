@@ -4,8 +4,6 @@
     <header><%= link_to article.title, article %></header>
     <small class="metadata">
       Created At <%= article.created_at %>
-      <%= link_to 'Edit', edit_article_path(article) %>
-      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
     </small>
     <hr />
     <summary><%= markdown(article.body).html_safe %></summary>
