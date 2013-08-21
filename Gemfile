@@ -53,7 +53,7 @@ gem 'bootstrap-sass', '~> 2.3.2.1'
 
 # activeadmin rails 4 support. Read more: https://github.com/gregbell/active_admin/pull/2326
 gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
-gem 'ransack',             github: 'ernie/ransack',         branch: 'rails-4'
+gem 'ransack'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'formtastic',          github: 'justinfrench/formtastic'
 
