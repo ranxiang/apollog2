@@ -60,7 +60,8 @@ gem 'formtastic-bootstrap'
 gem 'redcarpet'
 
 # passenger. Read more: http://www.modrails.com/documentation/Users%20guide%20Nginx.html#PassengerRuby
-gem 'passenger', group: :production
+# install via APT-GET in production ubuntu server
+# gem 'passenger', group: :production
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', group: :production

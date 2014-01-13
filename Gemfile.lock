@@ -61,7 +61,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    daemon_controller (1.1.5)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -103,10 +102,6 @@ GEM
     multi_json (1.8.4)
     mysql2 (0.3.13)
     orm_adapter (0.5.0)
-    passenger (4.0.14)
-      daemon_controller (>= 1.1.0)
-      rack
-      rake (>= 0.8.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -184,7 +179,6 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
-  passenger
   rails (= 4.0.2)
   redcarpet
   sass-rails (~> 4.0.1)
