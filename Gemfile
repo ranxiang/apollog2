@@ -2,22 +2,19 @@
 source "http://ruby.taobao.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.2'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+gem 'coffee-rails', '~> 4.0.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -49,13 +46,13 @@ end
 # Manually added
 
 # bootstrap-sass. Read more: https://github.com/thomas-mcdonald/bootstrap-sass
-gem 'bootstrap-sass', '~> 2.3.2.1'
+gem 'bootstrap-sass', '~> 3.0.3.0'
 
 # activeadmin rails 4 support. Read more: https://github.com/gregbell/active_admin/pull/2326
-gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
-gem 'ransack'
-gem 'inherited_resources', github: 'josevalim/inherited_resources'
-gem 'formtastic',          github: 'justinfrench/formtastic'
+gem 'activeadmin',         github: 'gregbell/active_admin'
+# gem 'ransack'
+# gem 'inherited_resources', github: 'josevalim/inherited_resources'
+# gem 'formtastic',          github: 'justinfrench/formtastic'
 
 gem 'formtastic-bootstrap'
 
@@ -64,3 +61,7 @@ gem 'redcarpet'
 
 # passenger. Read more: http://www.modrails.com/documentation/Users%20guide%20Nginx.html#PassengerRuby
 gem 'passenger', group: :production
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'therubyracer', group: :production
+
