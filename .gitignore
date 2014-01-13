@@ -25,3 +25,6 @@
 Session.vim
 .netrwhist
 *~
+
+# manually added by xran
+public/assets/
