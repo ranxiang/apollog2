@@ -40,7 +40,8 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -53,9 +54,6 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 
 # activeadmin rails 4 support. Read more: https://github.com/gregbell/active_admin/pull/2326
 gem 'activeadmin',         github: 'gregbell/active_admin'
-# gem 'ransack'
-# gem 'inherited_resources', github: 'josevalim/inherited_resources'
-# gem 'formtastic',          github: 'justinfrench/formtastic'
 
 gem 'formtastic-bootstrap'
 

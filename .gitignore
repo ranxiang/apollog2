@@ -28,3 +28,4 @@ Session.vim
 
 # manually added by xran
 public/assets/
+config/database.yml
