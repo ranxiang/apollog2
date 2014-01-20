@@ -21,7 +21,7 @@ server 'ranxiang.com', user: 'ranxiang', roles: %w{web app}, my_property: :my_va
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)
 # set it globally
 set :ssh_options, {
-  port: ENV['DEPLOY_PRD_SSH_PORT']
+  port: ENV['APOLLOG2_DEPLOY_SSH_PORT'] || 22
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
 #    forward_agent: false,
 #    auth_methods: %w(password)
