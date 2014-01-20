@@ -29,3 +29,6 @@ Session.vim
 # manually added by xran
 public/assets/
 config/database.yml
+
+# Ignore application configuration
+/config/application.yml

@@ -43,6 +43,9 @@ end
 gem 'capistrano-rails', group: :development
 gem 'capistrano-rvm', group: :development
 
+# Use Figaro to protection productio setting
+gem 'figaro'
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
