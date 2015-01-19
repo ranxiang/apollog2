@@ -35,6 +35,8 @@ end
 
 gem 'spring', group: :development
 
+ gem 'web-console', '~> 2.0', group: :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
