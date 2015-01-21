@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Apollog2</title>
+  <title><%= "#{@title_prefix} | " if @title_prefix.present? %>Apollog2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= auto_discovery_link_tag :atom, "/feed" %>
     <%= auto_discovery_link_tag :rss, "/feed.rss" %>
