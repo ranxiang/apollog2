@@ -1,6 +1,6 @@
 atom_feed :language => 'zh-CN' do |feed|
   articles = @articles.limit(10).order('updated_at DESC')
-  feed.title 'Apollog2'
+  feed.title t('blog.title')
   feed.updated articles.first.updated_at unless articles.empty?
 
   articles.each do |article|
