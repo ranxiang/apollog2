@@ -7,3 +7,11 @@ body {
 header {
   @extend h3;
 }
+
+.navbar-nav > li > a {
+  text-decoration: none;
+}
+
+.navbar-header a {
+  text-decoration: none;
+}
