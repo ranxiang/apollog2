@@ -70,9 +70,10 @@ gem 'formtastic-bootstrap'
 # markdown support. Read more: https://github.com/vmg/redcarpet
 gem 'redcarpet'
 
-# passenger. Read more: http://www.modrails.com/documentation/Users%20guide%20Nginx.html#PassengerRuby
-gem 'passenger', group: :production
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', group: :production
+
+# ruby web server
+gem 'puma'
+gem 'capistrano3-puma', group: :development
 
