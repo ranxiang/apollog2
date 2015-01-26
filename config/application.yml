@@ -5,4 +5,5 @@
 # PUSHER_SECRET: abdc3b896a0ffb85d373
 # STRIPE_API_KEY: EdAvEPVEC3LuaTg5Q3z6WbDVqZlcBQ8Z
 # STRIPE_PUBLIC_KEY: pk_BRgD57O8fHja9HxduJUszhef6jCyS
-SECRET_KEY_BASE: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SECRET_KEY_BASE: <%= ENV['APOLLOG2_SECRET_KEY_BASE'] %>
+SECRET_KEY_BASE: 5869eb2981035fc3f5aa340325ae4caebddc7086156b995c3ba791771acbe7ab838ba04032ba2593e04235b364a5aa2d0698329a8aca47108a6a2cc74ac43036

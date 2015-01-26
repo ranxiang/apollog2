@@ -34,7 +34,7 @@ production:
   encoding: utf8
   database: apollog2_production
   pool: 5
-  username: apollog2
-  password: apollog2
-  socket: /var/run/mysqld/mysqld.sock
+  username: <%= ENV['APOLLOG2_DATABASE_USERNAME'] %>
+  password: <%= ENV['APOLLOG2_DATABASE_PASSWORD'] %>
+  socket: <%= ENV['APOLLOG2_DATABASE_SOCKET'] %>
 
