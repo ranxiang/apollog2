@@ -9,7 +9,6 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html { render action: 'index' }
       format.atom { render :layout => false }
-      format.rss { redirect_to(articles_path(:format => :atom), :status => :moved_permanently)}
     end
   end
 

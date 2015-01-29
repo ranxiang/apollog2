@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :articles
   get '/feed'   => 'articles#index',
-      :as       => :feed,
       :defaults => { :format => 'atom' }
+  get '/atom', to: redirect('/feed')
+  get '/rss', to: redirect('/feed')
 
   root 'articles#index'
   # The priority is based upon order of creation: first created -> highest priority.

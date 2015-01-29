@@ -5,7 +5,7 @@
   <title><%= "#{@title_prefix} | " if @title_prefix.present? %><%= t("blog.title") %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= auto_discovery_link_tag :atom, "/feed" %>
-    <%= auto_discovery_link_tag :rss, "/feed.rss" %>
+    <%= auto_discovery_link_tag :rss, "/feed" %>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
