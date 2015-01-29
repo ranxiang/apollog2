@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <%= favicon_link_tag 'favicon.ico' %>
   <title><%= "#{@title_prefix} | " if @title_prefix.present? %><%= t("blog.title") %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= auto_discovery_link_tag :atom, "/feed" %>
