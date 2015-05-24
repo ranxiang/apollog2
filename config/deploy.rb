@@ -37,7 +37,7 @@ set :default_env, { rails_env: "production" }
 # set :keep_releases, 5
 
 # rvm setting
-set :rvm_ruby_version, 'ruby-2.2.1@apollog2'
+set :rvm_ruby_version, 'ruby-2.2.2@apollog2'
 
 namespace :deploy do
 
