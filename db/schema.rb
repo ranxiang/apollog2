@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20130806085514) do
   create_table "articles", force: :cascade do |t|
     t.string   "title",      limit: 255
     t.text     "body",       limit: 65535
-    t.boolean  "published",  limit: 1
+    t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
