@@ -37,7 +37,9 @@ set :default_env, { rails_env: "production" }
 # set :keep_releases, 5
 
 # rvm setting
-set :rvm_ruby_version, 'ruby-2.3.0@apollog2'
+set :rvm_ruby_version, 'ruby-2.3.1@apollog2'
+
+set :nginx_server_name, 'ranxiang.com blog.ranxiang.com www.ranxiang.com'
 
 namespace :deploy do
 
