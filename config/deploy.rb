@@ -41,6 +41,8 @@ set :rvm_ruby_version, 'ruby-2.3.1@apollog2'
 
 set :nginx_server_name, 'ranxiang.com blog.ranxiang.com www.ranxiang.com'
 
+set :nginx_use_ssl, true
+
 namespace :deploy do
 
   desc 'Restart application'
