@@ -55,6 +55,7 @@ gem 'figaro'
 # bootstrap-sass. Read more: https://github.com/thomas-mcdonald/bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.7'
 
+# active admin rails 5 support
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
@@ -68,3 +69,6 @@ gem 'redcarpet'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', group: :production
 
+# for paginate
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'

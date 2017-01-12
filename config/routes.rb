@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
 
 
+  concern :paginatable do
+    get '(page/:page)', action: :index, on: :collection, as: ''
+  end
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :articles
+  resources :articles, concerns: :paginatable
   get '/feed'   => 'articles#index',
       :defaults => { :format => 'atom' }
   get '/atom', to: redirect('/feed')

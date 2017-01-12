@@ -4,11 +4,12 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.published.order(created_at: :desc)
+    @articles = Article.published.order(created_at: :desc).page params[:page]
 
     respond_to do |format|
       format.html { render action: 'index' }
       format.atom { render :layout => false }
+      format.js
     end
   end
 
