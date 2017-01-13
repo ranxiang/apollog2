@@ -1,0 +1,37 @@
+<div class="row">
+<%= form_for comment, url: article_comments_url(article_id: comment.article.id), html: {class: "new-comment form-horizontal col-sm-6"} do |f| %>
+	<% if @comment.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+			<ul>
+				<% @comment.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+  <% end %>
+  <%= f.hidden_field :article_id %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+		  <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+		  <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Comment</label>
+    <div class="col-sm-10">
+		  <%= f.text_area :body, class: "form-control", rows: "5", placeholder: "Comment" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+<% end %>
+</div>

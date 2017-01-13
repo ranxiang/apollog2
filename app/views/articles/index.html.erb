@@ -1,8 +1,5 @@
 <div class='articles'>
-  <% @articles.each do |article| %>
-    <%= render article %>
-  <hr />
-  <% end %>
+  <%= render partial: "shared/article", collection: @articles %>
 </div>
 <div id="infinite-scrolling">
   <%= paginate @articles, :theme => 'twitter-bootstrap-3' %>

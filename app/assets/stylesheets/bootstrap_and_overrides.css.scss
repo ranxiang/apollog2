@@ -47,3 +47,15 @@ header {
   from { transform: scale(1) rotate(0deg);}
   to { transform: scale(1) rotate(360deg);}
 }
+
+.new-comment {
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px 4px 0 0;
+  padding: 20px 20px 0px 20px;
+  margin: 0px 0px 20px 0px;
+}
+.new-comment .control-label {
+  text-align: left;
+}

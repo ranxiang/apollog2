@@ -36,3 +36,5 @@ config/secrets.yml
 
 # ignore puma nginx deploy template
 config/deploy/templates/
+
+.byebug_history

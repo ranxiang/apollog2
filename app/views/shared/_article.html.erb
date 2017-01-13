@@ -1,8 +1,9 @@
-<article class='article'>
-  <header><%= link_to article.title, article %></header>
+<article class='article row'>
+  <header><%= link_to article.title, article_comments_url(article_id: article.id) %></header>
   <small class="metadata">
     Created At <%= article.created_at %>
   </small>
   <hr />
   <summary><%= markdown(article.body).html_safe %></summary>
+  <hr />
 </article>

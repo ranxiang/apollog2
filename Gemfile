@@ -72,3 +72,6 @@ gem 'therubyracer', group: :production
 # for paginate
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+
+gem 'byebug', group: :development
+
