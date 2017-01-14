@@ -67,6 +67,7 @@ class CommentsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_article
       @article = Article.find(params[:article_id])
+      @title_prefix = @article.title
       @comments = @article.comments.order(created_at: :desc)
     end
 
