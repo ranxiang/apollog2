@@ -26,7 +26,8 @@ require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/puma'
-require 'capistrano/puma/nginx'
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Nginx
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
