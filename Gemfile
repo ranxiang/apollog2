@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1.1'
+gem 'rails', '5.1.4'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -9,10 +9,10 @@ gem 'mysql2'
 gem 'sass-rails', '~> 5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 3.0.4'
+gem 'uglifier', '>= 3.2.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.2.1'
+gem 'coffee-rails', '~> 4.2.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -21,11 +21,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.6.1'
+gem 'jbuilder', '~> 2.7.0'
 
 gem 'spring', group: :development
 
-gem 'web-console', '~> 3.4.0', group: :development
+gem 'web-console', '~> 3.5.1', group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -57,7 +57,6 @@ gem 'bootstrap-sass', '~> 3.3.7'
 
 # active admin rails 5 support
 gem 'activeadmin', github: 'activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 gem 'devise'
 
@@ -75,3 +74,4 @@ gem 'bootstrap-kaminari-views'
 
 gem 'byebug', group: :development
 
+gem 'listen', group: :development
