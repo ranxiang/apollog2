@@ -29,11 +29,6 @@ Session.vim
 # manually added by xran
 public/assets/
 
-# Ignore application configuration
-config/database.yml
-config/secrets.yml
-
-
 # ignore puma nginx deploy template
 config/deploy/templates/
 
