@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.8.1'
+lock '3.10.0'
 
 set :application, 'apollog2'
 set :repo_url, 'git@github.com:ranxiang/apollog2.git'
@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:ranxiang/apollog2.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/root/deploy/apollog2'
+set :deploy_to, ENV['APOLLOG2_DEPLOY_TO']
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -37,9 +37,9 @@ set :default_env, { rails_env: "production" }
 # set :keep_releases, 5
 
 # rvm setting
-set :rvm_ruby_version, 'ruby-2.4.1@apollog2'
+set :rvm_ruby_version, 'ruby-2.4.2@apollog2'
 
-set :nginx_server_name, 'ranxiang.com blog.ranxiang.com www.ranxiang.com'
+set :nginx_server_name, ENV['APOLLOG2_DEPLOY_NGINX_SERVER_NAME']
 
 set :nginx_use_ssl, true
 
