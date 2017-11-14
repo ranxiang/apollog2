@@ -14,7 +14,7 @@ role :db, [ENV['APOLLOG2_DEPLOY_ROLE']]
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server ENV['APOLLOG2_DEPLOY_PRODUCTION_SERVER'], user: ENV['APOLLOG2_DEPLOY_PRODUCTION_USER'], roles: %w{web app}, my_property: :my_value
+server ENV['APOLLOG2_DEPLOY_PRODUCTION_SERVER'], user: ENV['APOLLOG2_DEPLOY_PRODUCTION_USER'], roles: %w{web app db}, my_property: :my_value
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
