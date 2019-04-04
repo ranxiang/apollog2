@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.10.0'
+lock '3.11.0'
 
 set :application, 'apollog2'
 set :repo_url, 'git@github.com:ranxiang/apollog2.git'
