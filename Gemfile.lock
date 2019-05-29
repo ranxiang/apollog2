@@ -171,7 +171,6 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mysql2 (0.5.2)
     net-scp (2.0.0)
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
@@ -179,6 +178,7 @@ GEM
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.1.4)
     puma (3.12.1)
     rack (2.0.7)
     rack-test (1.1.0)
@@ -295,7 +295,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   listen
-  mysql2
+  pg (>= 0.18, < 2.0)
   puma
   rails (= 5.2.3)
   redcarpet
