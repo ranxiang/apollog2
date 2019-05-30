@@ -37,9 +37,13 @@ set :default_env, { rails_env: "production" }
 # set :keep_releases, 5
 
 # rvm setting
-set :rvm_ruby_version, 'ruby-2.4.2@apollog2'
+set :rvm_ruby_version, 'ruby-2.6.3@apollog2'
 
 set :nginx_server_name, ENV['APOLLOG2_DEPLOY_NGINX_SERVER_NAME']
+
+set :nginx_ssl_certificate, ENV['APOLLOG2_DEPLOY_NGINX_SSL_CERTIFICATE']
+
+set :nginx_ssl_certificate_key, ENV['APOLLOG2_DEPLOY_NGINX_SSL_CERTIFICATE_KEY']
 
 set :nginx_use_ssl, true
 
