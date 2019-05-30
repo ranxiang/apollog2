@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :articles, concerns: :paginatable do
-    resources :comments
+    resources :comments, only: [:index]
   end
   get '/feed'   => 'articles#index', :defaults => { :format => 'atom' }
   get '/atom', to: redirect('/feed')
